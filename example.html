@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Example</title>
+</head>
+<body>
+<div id='output'>Q2xpY2sgaGVyZSB0byBlbmNvZGUgdGhpcyB0ZXh0IGluIEJhc2U2NC4=</div>
+<script src="function.js"></script>
+<script>
+document.querySelector("#output").addEventListener("click", function() {
+    const element = document.querySelector("#output");
+    if (element) {
+        const result = base64ToString(element.innerHTML);
+        element.innerHTML = result;
+    }
+});
+</script>
+</body>
+</html>
